@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Little Universe ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>❤️ Our Little Universe ❤️</h1>
+
+<p>Celebrating our very first monthsary and every beautiful memory since. </p>
+
+<div id="counter"></div>
+
+</div>
+
+<div class="hearts"></div>
+
+<div class="albums">
+
+<div class="card" onclick="openAlbum(0)">
+<img src="images/first-date/cover.jpg">
+<h2>🌸 First Date</h2>
+<p>Where everything started.</p>
+</div>
+
+<div class="card" onclick="openAlbum(1)">
+<img src="images/adventures/cover.jpg">
+<h2>🎡 Adventures</h2>
+<p>Trips together.</p>
+</div>
+
+<div class="card" onclick="openAlbum(2)">
+<img src="images/food/cover.jpg">
+<h2>🍜 Food Dates</h2>
+<p>Eating is our hobby.</p>
+</div>
+
+</div>
+
+<div id="viewer">
+
+<span class="close" onclick="closeAlbum()">✕</span>
+
+<img id="slide">
+
+<div class="buttons">
+
+<button onclick="prev()">◀</button>
+
+<button onclick="next()">▶</button>
+
+</div>
+
+
+
+<p id="caption"></p>
+
+</div>
+
+<audio id="music" loop autoplay>
+
+<source src="music/song.mp3">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
